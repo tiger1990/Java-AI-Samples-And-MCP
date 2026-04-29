@@ -1,0 +1,28 @@
+[
+  { "company": "OpenAI", "model": "gpt-5", "contextWindowSize": 200000 },
+  { "company": "OpenAI", "model": "gpt-5-mini", "contextWindowSize": 128000 },
+  { "company": "OpenAI", "model": "gpt-4.1", "contextWindowSize": 128000 },
+  { "company": "OpenAI", "model": "gpt-4o", "contextWindowSize": 128000 },
+  { "company": "OpenAI", "model": "gpt-4o-mini", "contextWindowSize": 128000 },
+
+  { "company": "Anthropic", "model": "claude-3.7-sonnet", "contextWindowSize": 200000 },
+  { "company": "Anthropic", "model": "claude-3.5-sonnet", "contextWindowSize": 200000 },
+  { "company": "Anthropic", "model": "claude-3-haiku", "contextWindowSize": 200000 },
+
+  { "company": "Google", "model": "gemini-2.5-pro", "contextWindowSize": 1000000 },
+  { "company": "Google", "model": "gemini-2.5-flash", "contextWindowSize": 1000000 },
+  { "company": "Google", "model": "gemini-1.5-pro", "contextWindowSize": 1000000 },
+  { "company": "Google", "model": "gemini-1.5-flash", "contextWindowSize": 1000000 },
+
+  { "company": "Meta", "model": "llama-3-70b", "contextWindowSize": 8192 },
+  { "company": "Meta", "model": "llama-3-8b", "contextWindowSize": 8192 },
+
+  { "company": "Mistral", "model": "mistral-large", "contextWindowSize": 32000 },
+  { "company": "Mistral", "model": "mistral-medium", "contextWindowSize": 32000 },
+  { "company": "Mistral", "model": "mixtral-8x7b", "contextWindowSize": 32000 },
+
+  { "company": "Cohere", "model": "command-r+", "contextWindowSize": 128000 },
+  { "company": "Cohere", "model": "command-r", "contextWindowSize": 128000 },
+
+  { "company": "xAI", "model": "grok-2", "contextWindowSize": 131072 }
+]

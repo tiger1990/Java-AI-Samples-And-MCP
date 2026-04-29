@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./mvnw compile:*)",
+      "Bash(./mvnw spring-boot:run)",
+      "Bash(./mvnw dependency:resolve -Dartifact=org.springframework.ai:spring-ai-bom)",
+      "Bash(curl -s \"https://repo.maven.apache.org/maven2/org/springframework/ai/spring-ai-bom/maven-metadata.xml\")",
+      "Bash(lsof -ti:8080)",
+      "Bash(xargs kill:*)",
+      "mcp__plugin_everything-claude-code_playwright__browser_navigate",
+      "mcp__plugin_everything-claude-code_exa__web_fetch_exa"
+    ]
+  }
+}

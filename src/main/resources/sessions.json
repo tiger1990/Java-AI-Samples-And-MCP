@@ -1,0 +1,53 @@
+{
+  "name": "Spring I/O 2026",
+  "year": 2026,
+  "dates": ["2026-04-13", "2026-04-14", "2026-04-15"],
+  "location": "Palau de Congressos de Catalunya, Barcelona, Spain",
+  "sessions": [
+    {
+      "id": "w01",
+      "title": "Building AI Applications with Spring AI - Fundamentals",
+      "speakers": ["Mark Pollack"],
+      "day": "2026-04-13",
+      "type": "Workshop",
+      "room": "Workshops 1",
+      "time": "09:00 - 17:00"
+    },
+    {
+      "id": "s01",
+      "title": "Bootiful Spring AI",
+      "speakers": ["Josh Long", "James Ward"],
+      "day": "2026-04-14",
+      "type": "Talk",
+      "room": "Auditorium",
+      "time": "09:00 - 09:50"
+    },
+    {
+      "id": "s02",
+      "title": "Inside Spring Boot 4: Restructuring for the Future",
+      "speakers": ["Moritz Halbritter"],
+      "day": "2026-04-14",
+      "type": "Talk",
+      "room": "Track 3",
+      "time": "10:00 - 10:50"
+    },
+    {
+      "id": "s03",
+      "title": "Core Resilience Features in Spring Framework 7",
+      "speakers": ["Juergen Hoeller"],
+      "day": "2026-04-15",
+      "type": "Talk",
+      "room": "Auditorium",
+      "time": "15:00 - 15:50"
+    },
+    {
+      "id": "s04",
+      "title": "Building Killer AI Agents on Your Spring Stack",
+      "speakers": ["Rod Johnson"],
+      "day": "2026-04-14",
+      "type": "Talk",
+      "room": "Track 2",
+      "time": "10:00 - 10:50"
+    }
+  ]
+}
