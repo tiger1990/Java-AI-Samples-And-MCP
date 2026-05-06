@@ -21,7 +21,11 @@ import java.util.List;
 public class RagConfiguration {
 
     public static final Logger log = LoggerFactory.getLogger(RagConfiguration.class);
+
     private final String vectorStoreName = "vectorStore.json";
+    // Inject the path from application.yaml
+//    @Value("${travelmonk.vectorstore.path}")
+//    private String vectorStorePath;
 
     @Value("classpath:/data/models.json")
     private Resource models;
@@ -62,15 +66,17 @@ public class RagConfiguration {
 //    }
 
     private File getVectorStoreFile() {
-        // Use user.dir (Project Root) instead of trying to find 'src' manually
-        // This creates/looks for the file in the folder where the app is running
-        Path path = Paths.get(System.getProperty("user.dir"), "data");
-        File dir = path.toFile();
+        // This forces the file to be created in your Documents/Java_AI_Samples/data folder
+        // regardless of where Claude launches the JAR from.
+        String userHome = System.getProperty("user.home");
+        Path path = Paths.get(userHome, "Documents", "Java_AI_Samples", "data");
 
-        // Ensure the 'data' directory actually exists in the project root
+        File dir = path.toFile();
         if (!dir.exists()) {
-            dir.mkdirs();
+            boolean created = dir.mkdirs();
+            log.info("Creating directory {}: {}", dir.getAbsolutePath(), created);
         }
+
         return new File(dir, vectorStoreName);
     }
 }
