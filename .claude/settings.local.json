@@ -18,7 +18,8 @@
       "Bash(jar -tf ~/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-mcp-server-webmvc/2.0.0-M4/spring-ai-autoconfigure-mcp-server-webmvc-2.0.0-M4.jar)",
       "Bash(find /Users/deepakpanwar/Documents/Java_AI_Samples/target -name *.jar -newer /Users/deepakpanwar/Documents/Java_AI_Samples/pom.xml)",
       "Read(//private/tmp/**)",
-      "Bash(jar -xf ~/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-mcp-server-webmvc/2.0.0-M4/spring-ai-autoconfigure-mcp-server-webmvc-2.0.0-M4.jar META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports)"
+      "Bash(jar -xf ~/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-mcp-server-webmvc/2.0.0-M4/spring-ai-autoconfigure-mcp-server-webmvc-2.0.0-M4.jar META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports)",
+      "Bash(gh api:*)"
     ]
   }
 }

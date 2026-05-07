@@ -47,7 +47,22 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: prometheus,health,info
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+        step: 5s
+  metrics:
+    distribution:
+      percentiles-histogram:
+        all: true
+    enable:
+      all: true
+  tracing:
+    sampling:
+      probability: 1.0
+    enabled: true
 
 #  main:
 #    web-application-type: none

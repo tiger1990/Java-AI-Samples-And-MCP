@@ -125,11 +125,46 @@ Add to `~/.claude.json`:
 }
 ```
 
+# Option to run Docker
+
+## Option 1: Docker Desktop (Easiest)
+
+- Download the latest Docker Desktop from:
+  - https://www.docker.com/products/docker-desktop
+
+---
+## Option 2: Colima (Recommended for Intel Mac)
+
+Lightweight, free, no GUI overhead, and works well on Intel.
+qemu needs in Intel Macs.
+Install dependencies:
+
+```bash
+brew install colima docker docker-compose   
+brew install qemu                                                                                                                                                     
+colima start                                                                                                                                                       
+```
+If you want to run it with specific resources suited for your 16GB RAM:
+! colima start --cpu 4 --memory 8 --disk 60
+This allocates 4 CPUs, 8GB RAM, 60GB disk — good balance for your machine. 
+
+That's it — docker compose up -d will work immediately after.
+What this compose.yaml does:
+- Prometheus (port 9090) — scrapes metrics using ./docker/prometheus.yml config
+- Grafana (port 3000) — dashboards UI, login: admin/admin, loads a pre-built AI metrics dashboard
+
+Once started:
+- Grafana: http://localhost:3000
+- Prometheus: http://localhost:9090
 ---
 
 ## Next Steps / Exploration
-
+--Reference: https://www.danvega.dev/newsletter/ai-for-java-developers-course
 - [ ] **Beehiiv MCP Server** - Explore building an MCP server for the Beehiiv newsletter platform
   - Reference: https://github.com/danvega/beehiiv-mcp-server/tree/master
   - Pattern: Real-world MCP server exposing an external API (Beehiiv) as tools for AI agents
   - Key concepts: tool definitions, API integration, authentication handling in MCP context
+  - Test with opensource models
+  - https://ollama.com/
+  - https://docs.openwebui.com/getting-started/quick-start
+  - https://docs.docker.com/ai/model-runner/openwebui-integration/
